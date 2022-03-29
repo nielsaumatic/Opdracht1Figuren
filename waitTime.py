@@ -3,15 +3,15 @@ import numpy as np
 import pandas as pd
 
 
-fcfsData = pd.read_csv('resultsCSV 20000/fcfs.csv', sep=',')
-sjfData = pd.read_csv('resultsCSV 20000/sjf.csv', sep=',')
-srtData = pd.read_csv('resultsCSV 20000/srt.csv', sep=',')
-rr2Data = pd.read_csv('resultsCSV 20000/rr2.csv', sep=',')
-rr4Data = pd.read_csv('resultsCSV 20000/rr4.csv', sep=',')
-rr8Data = pd.read_csv('resultsCSV 20000/rr8.csv', sep=',')
-hrrnData = pd.read_csv('resultsCSV 20000/hrrn.csv', sep=',')
-mlfb5Data = pd.read_csv('resultsCSV 20000/mlfb5.csv', sep=',')
-mlfb25Data = pd.read_csv('resultsCSV 20000/mlfb25.csv', sep=',')
+fcfsData = pd.read_csv('resultsCSV 10000/fcfs.csv', sep=',')
+sjfData = pd.read_csv('resultsCSV 10000/sjf.csv', sep=',')
+srtData = pd.read_csv('resultsCSV 10000/srt.csv', sep=',')
+rr2Data = pd.read_csv('resultsCSV 10000/rr2.csv', sep=',')
+rr4Data = pd.read_csv('resultsCSV 10000/rr4.csv', sep=',')
+rr8Data = pd.read_csv('resultsCSV 10000/rr8.csv', sep=',')
+hrrnData = pd.read_csv('resultsCSV 10000/hrrn.csv', sep=',')
+mlfb5Data = pd.read_csv('resultsCSV 10000/mlfb5.csv', sep=',')
+mlfb25Data = pd.read_csv('resultsCSV 10000/mlfb25.csv', sep=',')
 
 
 plt.plot(fcfsData['percentage'], fcfsData['gemiddeldWait'], label='FCFS')
@@ -28,4 +28,4 @@ plt.ylabel('Wachttijd')
 plt.ylim(0, 2000)
 plt.legend()
 plt.title('Wachttijd in functie van bedieningstijd')
-plt.savefig('wait20000.svg')
+plt.savefig('wait10000.svg')
